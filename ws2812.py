@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from __future__ import print_function
 NumpyImported=False
 try:
     import numpy
@@ -102,7 +103,7 @@ if __name__=="__main__":
         opts, args = getopt.getopt(sys.argv[1:], "hn:c:t", ["help", "color=", "test"])
     except getopt.GetoptError as err:
         # print help information and exit:
-        print str(err) # will print something like "option -a not recognized"
+        print(str(err)) # will print something like "option -a not recognized"
         usage()
         sys.exit(2)
     color=None
